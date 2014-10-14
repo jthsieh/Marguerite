@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2337A458CD5FAB6C554B5DEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C61494435B55CAEB009C2A6E /* libPods.a */; };
 		A94CB2CF19EC500300D5F482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2CE19EC500300D5F482 /* main.m */; };
 		A94CB2D219EC500300D5F482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2D119EC500300D5F482 /* AppDelegate.m */; };
 		A94CB2D519EC500300D5F482 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2D419EC500300D5F482 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		A94CB2DA19EC500300D5F482 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94CB2D919EC500300D5F482 /* Images.xcassets */; };
 		A94CB2DD19EC500300D5F482 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94CB2DB19EC500300D5F482 /* LaunchScreen.xib */; };
 		A94CB2E919EC500300D5F482 /* MargueriteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2E819EC500300D5F482 /* MargueriteTests.m */; };
+		A94CB2F819EC633C00D5F482 /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2F719EC633C00D5F482 /* RoutesViewController.m */; };
+		A94CB2FD19EC924C00D5F482 /* MargueriteRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2FC19EC924C00D5F482 /* MargueriteRoute.m */; };
+		A94CB30019EDA14300D5F482 /* MargueriteNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2FF19EDA14300D5F482 /* MargueriteNetworkingService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7B9FD33E47D7333D2CA555F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A94CB2C919EC500300D5F482 /* Marguerite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marguerite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94CB2CD19EC500300D5F482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94CB2CE19EC500300D5F482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,14 @@
 		A94CB2E219EC500300D5F482 /* MargueriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MargueriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94CB2E719EC500300D5F482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94CB2E819EC500300D5F482 /* MargueriteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MargueriteTests.m; sourceTree = "<group>"; };
+		A94CB2F619EC633C00D5F482 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutesViewController.h; path = UI/RoutesViewController.h; sourceTree = "<group>"; };
+		A94CB2F719EC633C00D5F482 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutesViewController.m; path = UI/RoutesViewController.m; sourceTree = "<group>"; };
+		A94CB2FB19EC924C00D5F482 /* MargueriteRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MargueriteRoute.h; sourceTree = "<group>"; };
+		A94CB2FC19EC924C00D5F482 /* MargueriteRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MargueriteRoute.m; sourceTree = "<group>"; };
+		A94CB2FE19EDA14300D5F482 /* MargueriteNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MargueriteNetworkingService.h; sourceTree = "<group>"; };
+		A94CB2FF19EDA14300D5F482 /* MargueriteNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MargueriteNetworkingService.m; sourceTree = "<group>"; };
+		AEC0CF72DD12EE4998DDE3ED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C61494435B55CAEB009C2A6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2337A458CD5FAB6C554B5DEE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E70350E4DD456BEC09654EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C61494435B55CAEB009C2A6E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A94CB2C019EC500300D5F482 = {
 			isa = PBXGroup;
 			children = (
 				A94CB2CB19EC500300D5F482 /* Marguerite */,
 				A94CB2E519EC500300D5F482 /* MargueriteTests */,
 				A94CB2CA19EC500300D5F482 /* Products */,
+				D8A21AAB10360F80E7DE081C /* Pods */,
+				5E70350E4DD456BEC09654EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +105,9 @@
 		A94CB2CB19EC500300D5F482 /* Marguerite */ = {
 			isa = PBXGroup;
 			children = (
+				A94CB2FA19EC921600D5F482 /* Model */,
+				A94CB2F919EC90FE00D5F482 /* Service */,
+				A94CB2F519EC632400D5F482 /* UI */,
 				A94CB2D019EC500300D5F482 /* AppDelegate.h */,
 				A94CB2D119EC500300D5F482 /* AppDelegate.m */,
 				A94CB2D319EC500300D5F482 /* ViewController.h */,
@@ -119,6 +146,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A94CB2F519EC632400D5F482 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A94CB2F619EC633C00D5F482 /* RoutesViewController.h */,
+				A94CB2F719EC633C00D5F482 /* RoutesViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A94CB2F919EC90FE00D5F482 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A94CB2FE19EDA14300D5F482 /* MargueriteNetworkingService.h */,
+				A94CB2FF19EDA14300D5F482 /* MargueriteNetworkingService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		A94CB2FA19EC921600D5F482 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A94CB2FB19EC924C00D5F482 /* MargueriteRoute.h */,
+				A94CB2FC19EC924C00D5F482 /* MargueriteRoute.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D8A21AAB10360F80E7DE081C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7B9FD33E47D7333D2CA555F /* Pods.debug.xcconfig */,
+				AEC0CF72DD12EE4998DDE3ED /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A94CB2EC19EC500300D5F482 /* Build configuration list for PBXNativeTarget "Marguerite" */;
 			buildPhases = (
+				502CC98135B557012A4B05BF /* Check Pods Manifest.lock */,
 				A94CB2C519EC500300D5F482 /* Sources */,
 				A94CB2C619EC500300D5F482 /* Frameworks */,
 				A94CB2C719EC500300D5F482 /* Resources */,
+				2818A573D8AC4B1016DCA211 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +279,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2818A573D8AC4B1016DCA211 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		502CC98135B557012A4B05BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A94CB2C519EC500300D5F482 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,7 +319,10 @@
 			files = (
 				A94CB2D519EC500300D5F482 /* ViewController.m in Sources */,
 				A94CB2D219EC500300D5F482 /* AppDelegate.m in Sources */,
+				A94CB30019EDA14300D5F482 /* MargueriteNetworkingService.m in Sources */,
+				A94CB2F819EC633C00D5F482 /* RoutesViewController.m in Sources */,
 				A94CB2CF19EC500300D5F482 /* main.m in Sources */,
+				A94CB2FD19EC924C00D5F482 /* MargueriteRoute.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +442,13 @@
 		};
 		A94CB2ED19EC500300D5F482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B9FD33E47D7333D2CA555F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = Marguerite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,8 +457,13 @@
 		};
 		A94CB2EE19EC500300D5F482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC0CF72DD12EE4998DDE3ED /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = Marguerite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +472,7 @@
 		};
 		A94CB2F019EC500300D5F482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B9FD33E47D7333D2CA555F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -380,6 +492,7 @@
 		};
 		A94CB2F119EC500300D5F482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC0CF72DD12EE4998DDE3ED /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,6 +525,7 @@
 				A94CB2EE19EC500300D5F482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94CB2EF19EC500300D5F482 /* Build configuration list for PBXNativeTarget "MargueriteTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +534,7 @@
 				A94CB2F119EC500300D5F482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
