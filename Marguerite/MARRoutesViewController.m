@@ -94,7 +94,7 @@
     
     MARMargueriteRoute *route = [self.routes objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     [stopsViewController setRouteId:route.routeId];
-    [stopsViewController setTitle:route.routeLongName];
+    //[stopsViewController setTitle:route.routeLongName];
     
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }

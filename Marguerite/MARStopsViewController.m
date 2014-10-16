@@ -9,13 +9,15 @@
 #import "MARStopsViewController.h"
 
 #import "MARMargueriteRoute.h"
-#import "MARMargueriteStops.h"
 #import "MARNetworkingService.h"
 
 @interface MARStopsViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (assign, nonatomic) NSInteger tripId;
+@property (strong, nonatomic) NSMutableDictionary *allStops;
 @property (strong, nonatomic) NSMutableArray *stops;
 
 @end
@@ -26,7 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.stops = [[NSMutableArray alloc] init];
-    MARMargueriteStops *MARStops = [[MARMargueriteStops alloc] initWithData];
+    NSString *str = [NSString stringWithFormat:@"ID: %ld", (long)self.routeId];
+    [self.label setText:str];
     
     // Get one trip of that route
     MARNetworkingService *sharedService = [MARNetworkingService sharedNetworkingService];
@@ -50,6 +53,25 @@
         [alert show];
     }];
     
+    self.allStops = [[NSMutableDictionary alloc] init];
+    [sharedService getDataWithURL:@"stops" success:^(id responseObject) {
+        
+        NSDictionary *dict = responseObject; // Key: string, value: an array of NSDictionaries
+        NSArray *results = [dict objectForKey:@"results"]; // Get the array of dictionaries
+        for (NSDictionary *stopInfo in results) {
+            [self.allStops setObject:stopInfo[@"stop_name"] forKey:stopInfo[@"stop_id"]];
+        }
+        
+    } failure:^(NSError *error) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!"
+                                                        message:[NSString stringWithFormat:@"Problem found: %@", error.localizedDescription]
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Okay"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }];
+
+    
     
     // Get all the stops
     [sharedService getDataWithURL:@"stop_times" success:^(id responseObject) {
@@ -58,10 +80,14 @@
         NSArray *allStops = [dict objectForKey:@"results"];
         for (NSDictionary *stop in allStops) {
             if ([stop[@"trip_id"] integerValue] == self.tripId) {
-                NSString *name = [MARStops.stops objectForKey:stop[@"stop_id"]];
+                NSString *name = [self.allStops objectForKey:stop[@"stop_id"]];
                 [self.stops addObject:name];
             }
         }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
         
     } failure:^(NSError *error) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error!"
@@ -79,6 +105,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - UITableView Delegate
 
