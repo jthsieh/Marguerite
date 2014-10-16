@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2337A458CD5FAB6C554B5DEE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C61494435B55CAEB009C2A6E /* libPods.a */; };
+		A946B20319EDAE5300C60642 /* MARMargueriteRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A946B20219EDAE5300C60642 /* MARMargueriteRoute.m */; };
+		A946B20619EE16B300C60642 /* MARRoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A946B20519EE16B300C60642 /* MARRoutesViewController.m */; };
+		A946B20A19EE16FC00C60642 /* MARNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = A946B20919EE16FC00C60642 /* MARNetworkingService.m */; };
+		A946B20E19EF7F3800C60642 /* MARStopsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A946B20D19EF7F3800C60642 /* MARStopsViewController.m */; };
 		A94CB2CF19EC500300D5F482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2CE19EC500300D5F482 /* main.m */; };
 		A94CB2D219EC500300D5F482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2D119EC500300D5F482 /* AppDelegate.m */; };
-		A94CB2D519EC500300D5F482 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2D419EC500300D5F482 /* ViewController.m */; };
 		A94CB2D819EC500300D5F482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94CB2D619EC500300D5F482 /* Main.storyboard */; };
 		A94CB2DA19EC500300D5F482 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94CB2D919EC500300D5F482 /* Images.xcassets */; };
 		A94CB2DD19EC500300D5F482 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94CB2DB19EC500300D5F482 /* LaunchScreen.xib */; };
 		A94CB2E919EC500300D5F482 /* MargueriteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2E819EC500300D5F482 /* MargueriteTests.m */; };
-		A94CB2F819EC633C00D5F482 /* RoutesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2F719EC633C00D5F482 /* RoutesViewController.m */; };
-		A94CB2FD19EC924C00D5F482 /* MargueriteRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2FC19EC924C00D5F482 /* MargueriteRoute.m */; };
-		A94CB30019EDA14300D5F482 /* MargueriteNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = A94CB2FF19EDA14300D5F482 /* MargueriteNetworkingService.m */; };
+		A95FD82719EFB94600A0136D /* MARMargueriteStops.m in Sources */ = {isa = PBXBuildFile; fileRef = A95FD82619EFB94600A0136D /* MARMargueriteStops.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,25 +33,27 @@
 
 /* Begin PBXFileReference section */
 		A7B9FD33E47D7333D2CA555F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A946B20119EDAE5300C60642 /* MARMargueriteRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARMargueriteRoute.h; sourceTree = "<group>"; };
+		A946B20219EDAE5300C60642 /* MARMargueriteRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARMargueriteRoute.m; sourceTree = "<group>"; };
+		A946B20419EE16B300C60642 /* MARRoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARRoutesViewController.h; sourceTree = "<group>"; };
+		A946B20519EE16B300C60642 /* MARRoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARRoutesViewController.m; sourceTree = "<group>"; };
+		A946B20819EE16FC00C60642 /* MARNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARNetworkingService.h; sourceTree = "<group>"; };
+		A946B20919EE16FC00C60642 /* MARNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARNetworkingService.m; sourceTree = "<group>"; };
+		A946B20C19EF7F3800C60642 /* MARStopsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARStopsViewController.h; sourceTree = "<group>"; };
+		A946B20D19EF7F3800C60642 /* MARStopsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARStopsViewController.m; sourceTree = "<group>"; };
 		A94CB2C919EC500300D5F482 /* Marguerite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marguerite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94CB2CD19EC500300D5F482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94CB2CE19EC500300D5F482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A94CB2D019EC500300D5F482 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A94CB2D119EC500300D5F482 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A94CB2D319EC500300D5F482 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A94CB2D419EC500300D5F482 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A94CB2D719EC500300D5F482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A94CB2D919EC500300D5F482 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A94CB2DC19EC500300D5F482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A94CB2E219EC500300D5F482 /* MargueriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MargueriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94CB2E719EC500300D5F482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94CB2E819EC500300D5F482 /* MargueriteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MargueriteTests.m; sourceTree = "<group>"; };
-		A94CB2F619EC633C00D5F482 /* RoutesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoutesViewController.h; path = UI/RoutesViewController.h; sourceTree = "<group>"; };
-		A94CB2F719EC633C00D5F482 /* RoutesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoutesViewController.m; path = UI/RoutesViewController.m; sourceTree = "<group>"; };
-		A94CB2FB19EC924C00D5F482 /* MargueriteRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MargueriteRoute.h; sourceTree = "<group>"; };
-		A94CB2FC19EC924C00D5F482 /* MargueriteRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MargueriteRoute.m; sourceTree = "<group>"; };
-		A94CB2FE19EDA14300D5F482 /* MargueriteNetworkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MargueriteNetworkingService.h; sourceTree = "<group>"; };
-		A94CB2FF19EDA14300D5F482 /* MargueriteNetworkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MargueriteNetworkingService.m; sourceTree = "<group>"; };
+		A95FD82519EFB94600A0136D /* MARMargueriteStops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARMargueriteStops.h; sourceTree = "<group>"; };
+		A95FD82619EFB94600A0136D /* MARMargueriteStops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARMargueriteStops.m; sourceTree = "<group>"; };
 		AEC0CF72DD12EE4998DDE3ED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C61494435B55CAEB009C2A6E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,8 +113,6 @@
 				A94CB2F519EC632400D5F482 /* UI */,
 				A94CB2D019EC500300D5F482 /* AppDelegate.h */,
 				A94CB2D119EC500300D5F482 /* AppDelegate.m */,
-				A94CB2D319EC500300D5F482 /* ViewController.h */,
-				A94CB2D419EC500300D5F482 /* ViewController.m */,
 				A94CB2D619EC500300D5F482 /* Main.storyboard */,
 				A94CB2D919EC500300D5F482 /* Images.xcassets */,
 				A94CB2DB19EC500300D5F482 /* LaunchScreen.xib */,
@@ -149,8 +150,10 @@
 		A94CB2F519EC632400D5F482 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				A94CB2F619EC633C00D5F482 /* RoutesViewController.h */,
-				A94CB2F719EC633C00D5F482 /* RoutesViewController.m */,
+				A946B20419EE16B300C60642 /* MARRoutesViewController.h */,
+				A946B20519EE16B300C60642 /* MARRoutesViewController.m */,
+				A946B20C19EF7F3800C60642 /* MARStopsViewController.h */,
+				A946B20D19EF7F3800C60642 /* MARStopsViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -158,8 +161,8 @@
 		A94CB2F919EC90FE00D5F482 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A94CB2FE19EDA14300D5F482 /* MargueriteNetworkingService.h */,
-				A94CB2FF19EDA14300D5F482 /* MargueriteNetworkingService.m */,
+				A946B20819EE16FC00C60642 /* MARNetworkingService.h */,
+				A946B20919EE16FC00C60642 /* MARNetworkingService.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -167,8 +170,10 @@
 		A94CB2FA19EC921600D5F482 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A94CB2FB19EC924C00D5F482 /* MargueriteRoute.h */,
-				A94CB2FC19EC924C00D5F482 /* MargueriteRoute.m */,
+				A946B20119EDAE5300C60642 /* MARMargueriteRoute.h */,
+				A946B20219EDAE5300C60642 /* MARMargueriteRoute.m */,
+				A95FD82519EFB94600A0136D /* MARMargueriteStops.h */,
+				A95FD82619EFB94600A0136D /* MARMargueriteStops.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -317,12 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A94CB2D519EC500300D5F482 /* ViewController.m in Sources */,
+				A95FD82719EFB94600A0136D /* MARMargueriteStops.m in Sources */,
+				A946B20319EDAE5300C60642 /* MARMargueriteRoute.m in Sources */,
+				A946B20619EE16B300C60642 /* MARRoutesViewController.m in Sources */,
 				A94CB2D219EC500300D5F482 /* AppDelegate.m in Sources */,
-				A94CB30019EDA14300D5F482 /* MargueriteNetworkingService.m in Sources */,
-				A94CB2F819EC633C00D5F482 /* RoutesViewController.m in Sources */,
+				A946B20A19EE16FC00C60642 /* MARNetworkingService.m in Sources */,
 				A94CB2CF19EC500300D5F482 /* main.m in Sources */,
-				A94CB2FD19EC924C00D5F482 /* MargueriteRoute.m in Sources */,
+				A946B20E19EF7F3800C60642 /* MARStopsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
