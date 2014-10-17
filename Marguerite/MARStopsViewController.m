@@ -12,7 +12,6 @@
 #import "MARNetworkingService.h"
 
 @interface MARStopsViewController ()<UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -28,8 +27,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.stops = [[NSMutableArray alloc] init];
-    NSString *str = [NSString stringWithFormat:@"ID: %ld", (long)self.routeId];
-    [self.label setText:str];
     
     // Get one trip of that route
     MARNetworkingService *sharedService = [MARNetworkingService sharedNetworkingService];
@@ -53,6 +50,7 @@
         [alert show];
     }];
     
+    
     self.allStops = [[NSMutableDictionary alloc] init];
     [sharedService getDataWithURL:@"stops" success:^(id responseObject) {
         
@@ -73,7 +71,7 @@
 
     
     
-    // Get all the stops
+    // Get all the stops of that trip
     [sharedService getDataWithURL:@"stop_times" success:^(id responseObject) {
         
         NSDictionary *dict = responseObject;
